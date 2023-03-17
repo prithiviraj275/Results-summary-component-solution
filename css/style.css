@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+}
+
+:root{   
+/* ## Colors */
+
+/* ### Primary */
+--Light_red: hsl(0, 100%, 67%);
+--Orangey_yellow: hsl(39, 100%, 56%);
+--Green_teal: hsl(166, 100%, 37%);
+--Cobalt_blue: hsl(234, 85%, 45%);
+
+/* ## Gradients */
+
+--Light_slate_blue : hsl(252, 100%, 67%);
+--Light_royal_blue : hsl(241, 81%, 54%);
+
+--Violet_blue : hsla(256, 72%, 46%, 1);
+--Persian_blue : hsla(241, 72%, 46%, 0);
+
+
+
+/* ### Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale_blue: hsl(221, 100%, 96%);
+--Light_lavender: hsl(241, 100%, 89%);
+--Dark_gray_blue: hsl(224, 30%, 27%);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk';
+   
+}
+/* first half background */
+.sc1{
+   /* height: 50vh; */
+   background-image:linear-gradient(180deg,var(--Light_slate_blue),var(--Light_royal_blue));
+   border-radius: 0 0 25px 25px;
+   display: grid;
+   grid-template-columns: 1fr;
+   align-items: center;
+   justify-items: center;
+   padding: .5rem;
+   text-align: center;
+}
+.a1{
+    margin-top: 20px;
+}
+.head1{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--Light_lavender);
+}
+/* result background */
+.a2{
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, var(--Violet_blue),var(--Persian_blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    color: var(--White);
+    /* padding: 20px; */
+    margin:20px;
+}
+/* result number */
+
+.n1{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+.n2{
+    color: var(--Light_lavender);
+    font-family: 'Hanken Grotesk'; 
+    font-weight: 500;   
+
+}
+/* third para */
+.a3{
+    width: 75%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.a3>h1{
+    color: var(--White);
+    font-weight: 500;
+    font-family: 'Hanken Grotesk'; 
+    padding-bottom: 5px;
+}
+.a3>p{
+    color: var(--Light_lavender);
+    font-weight: 700;
+    font-family: 'Hanken Grotesk'; 
+    font-size: .9rem;
+}
+
+/* second half page */
+.sc2{
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+}
+.head2{
+    justify-self: left;   
+    padding-left: 10px;
+}
+
+/* h2 text heading */
+.head2>h2{
+    /* font-size: 1rem; */
+    color: var(--Dark_gray_blue);
+
+}
+/* color box */
+.bx{
+    /* opacity: .2; */
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%; 
+    height: 60px;
+    font-weight: 700; 
+}
+.x1{
+    background-color: hsl(0, 100%, 95%);
+    color: var(--Light_red);
+}
+.x2{
+    color: var(--Orangey_yellow);
+    background-color: hsl(39, 100%, 95%);
+}
+.x3{
+   color: var(--Green_teal);
+   background-color: hsl(166, 100%, 95%);
+}
+.x4{
+   color: var(--Cobalt_blue);
+   background-color: hsl(234, 85%, 95%);
+}
+.bx{    
+    font-family: url(../assets/fonts/static/HankenGrotesk-Medium.ttf) ;
+    font-weight: 700;
+    padding: 0 10px 0 10px ;
+    
+}
+.bx>.res{    
+    color: var(--Dark_gray_blue);
+    margin-left: auto;
+}
+.res>span{
+    color: hsl(224, 30%, 70%);
+    
+}
+
+.bx>span{
+    margin-left:10px ;
+
+}
+/* for inside color box name */
+.z{
+    display: flex;
+    align-self: center;
+}
+.z>span{
+    padding-left: 10px;
+}
+
+/* for button */
+.but1{
+    background-color: var(--Dark_gray_blue);
+    width: 95%; 
+    height: 60px;
+    color:#fff;
+    font-family: url(../assets/fonts/static/HankenGrotesk-Medium.ttf) ;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 50px;
+
+}
+.but1:hover{
+    background: linear-gradient(180deg, var(--Light_slate_blue),var(--Light_royal_blue));
+}
+
+
+@media screen and (min-width: 600px) {
+  
+    body{
+        
+        display: flex;
+        flex-direction: column;
+        height: 650px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main{
+
+        display: flex;
+        flex-direction: row;   
+        box-shadow: lightgrey 10px 10px 10px;
+        border-radius: 25px ;
+        margin-bottom: 50px;
+    
+    }
+    .sc1{
+        border-radius: 25px ;
+        width: 50%;
+    }
+    .sc2{
+        width: 50%;
+       
+    }
+    .head>h2{
+        font-size: 0rem;
+    }
+
+
+}
